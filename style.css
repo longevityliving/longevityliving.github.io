@@ -1,0 +1,250 @@
+/* Basic Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9fdfa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+.hidden { display: none; }
+
+/* Header */
+header {
+    background-color: #2c5e3f;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+header nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero {
+    background-color: #e6f4ea;
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid #d0e8d7;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #2c5e3f;
+    margin-bottom: 1rem;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    color: #2c5e3f;
+    font-size: 2rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    height: 80px;
+    overflow: hidden;
+}
+
+.btn-view {
+    display: inline-block;
+    background-color: #3e8e56;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #2c5e3f;
+}
+
+/* E-Book Section */
+.ebook-section {
+    background-color: #2c5e3f;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.ebook-section h2 { margin-bottom: 1rem; }
+.ebook-section p { margin-bottom: 2rem; max-width: 600px; margin-inline: auto; }
+
+#ebook-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#ebook-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#ebook-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #e09f3e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#ebook-form button:hover { background-color: #c9882a; }
+
+#form-message {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #c8e6c9;
+}
+
+/* Contact */
+#contact { margin-bottom: 4rem; }
+.email-link {
+    font-size: 1.2rem;
+    color: #3e8e56;
+    font-weight: bold;
+    text-decoration: none;
+}
+.email-link:hover { text-decoration: underline; }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-links { margin-top: 1rem; }
+.link-btn {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+.link-btn:hover { color: white; }
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-btn:hover { color: #333; }
+
+#modal-title { margin-bottom: 1rem; color: #2c5e3f; }

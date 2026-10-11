@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longetivity Living - Premium Health Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Longetivity Living</h1>
+            <nav>
+                <a href="#products">Products</a>
+                <a href="#ebook">Free E-Book</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Longetivity Living</h2>
+            <p>Discover the best health and wellness products carefully selected to improve your vitality and lifespan.</p>
+        </div>
+    </section>
+
+    <section id="products" class="container">
+        <h2 class="section-title">Daily Wellness Roster</h2>
+        <div class="product-grid" id="product-list">
+            <!-- Products will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <section id="ebook" class="ebook-section">
+        <div class="container">
+            <h2>Get Your Free Health Recipes E-Book!</h2>
+            <p>Enter your email below to receive our exclusive e-book containing 50+ life-enhancing health recipes. (Emails are securely saved to our mailing list).</p>
+            <form id="ebook-form">
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <button type="submit">Send My Free E-Book</button>
+            </form>
+            <p id="form-message" class="hidden">Thank you! Your email has been saved and your e-book is on its way.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p>If you have any questions or inquiries, please reach out to us at:</p>
+        <a href="mailto:supplepharmofficial@gmail.com" class="email-link">supplepharmofficial@gmail.com</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Longetivity Living. All rights reserved.</p>
+            <div class="footer-links">
+                <button id="btn-privacy" class="link-btn">Privacy Policy</button> | 
+                <button id="btn-terms" class="link-btn">Terms & Conditions</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Title</h2>
+            <div id="modal-body">Content</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
